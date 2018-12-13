@@ -29,14 +29,13 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+                    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+                <![endif]-->
 
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
@@ -223,7 +222,7 @@
                         <div class="input-group custom-search-form">
                             <input type="text" class="form-control" placeholder="통합검색">
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
+                                <button id="allsearch" class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
                                 </button>
                             </span>
@@ -241,10 +240,10 @@
                         <a href="search-recipe.html"><i class="fa fa-won fa-fw"></i> 더 맛있는 음식을 위한 지출!<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="tables.html">한 가지 재료추가</a>
+                                <a href="tables.html">한가지 재료추가</a>
                             </li>
                             <li>
-                                <a href="tables.html">두 가지 재료추가</a>
+                                <a href="tables.html">두가지 재료추가</a>
                             </li>
                             <li>
                                 <a href="tables.html">Mores</a>
@@ -258,54 +257,23 @@
         <!-- /.navbar-static-side -->
     </nav>
 
-    <div id="page-wrapper">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 id="menu-name" class="page-header">메뉴이름</h1>
-            </div>
-            <!-- /.col-lg-12 -->
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <i class="fa fa-cutlery"></i> 레시피
-                    </div>
-                    <!-- /.panel-heading -->
-
-                    <!--User's refrigerator-->
-
-                    <div class="panel-body">
-                        <div id="recipe"></div>
-                        <div class="panel panel-default">
-                                
-                            <div class="panel-body" style="overflow:auto">
-                                <p><b>작성자</b></p>
-                                <p id="userid"></p>
-                            </div>
-                            <div class="panel-body" style="overflow:auto">
-                                <p><b>카테고리</b></p>
-                                <p id="category"></p>
-                            </div>
-                            <div id="description" class="panel-body" style="overflow:auto">
-                                ㅇㄴ마ㅣㅓ아ㅣㅁ너ㅣ엄나
-                            </div>
-                            <!-- /.panel-body -->
-                        </div>
-                        <!-- /.panel -->
-
-                    </div>
-                    <!-- /.panel-body -->
+    <div id="wrapper">
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">자취왕 통합검색!</h1>
                 </div>
-
+                <!-- /.col-lg-12 -->
             </div>
-
+            <!-- /.row -->
+            <div id="recipe-list" class="row">
+                검색해주세요...
+            </div>
         </div>
-        <!-- /.col-lg-4 -->
+        <!-- /#page-wrapper -->
+
     </div>
-    <!-- /.row -->
-    </div>
-    <!-- /#page-wrapper -->
+    <!-- /#wrapper -->
 
     <!-- jQuery -->
     <script src="../vendor/jquery/jquery.min.js"></script>
@@ -319,7 +287,7 @@
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
 
-    <script src="../dist/js/recipe-detail.js"></script>
+    <script src="../dist/js/search-recipe.js"></script>
     <script src="jquery.cookie.js"></script>  
 </body>
 

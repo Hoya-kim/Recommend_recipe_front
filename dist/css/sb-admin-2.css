@@ -432,3 +432,29 @@ table.dataTable thead .sorting:after {
     border-left-width: 0;
   }
 }
+@media (max-width: 991px) {
+  .vertical-div{
+    display:none;
+  }
+}
+.custom-container {
+  margin-top: 10%;
+}
+.vertical-line{
+  border-left: 2px solid #b7b6b9;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1px;
+}
+.body{
+  background: #f8f8f8;
+}
+
+.signup-panel {
+  margin-top: 12%;
+}
+
+.findpw-panel {
+  margin-top: 35%;
+}

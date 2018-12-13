@@ -223,7 +223,7 @@
                             <div class="input-group custom-search-form">
                                 <input type="text" class="form-control" placeholder="통합검색">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">
+                                    <button id="allsearch" class="btn btn-default" type="button">
                                         <i class="fa fa-search"></i>
                                     </button>
                                 </span>
@@ -234,20 +234,20 @@
                             <a href="index.html"><i class="fa fa-home fa-fw"></i> 메인</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-heart-o fa-fw"></i> 지금도 맛있는 레시피!</a>
+                            <a href="search-from.html"><i class="fa fa-heart-o fa-fw"></i> 지금도 맛있는 레시피!</a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-won fa-fw"></i> 더 맛있는 음식을 위한 지출!<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="tables.html">한가지 재료추가</a>
+                                    <a href="search-from1.html">한가지 재료추가</a>
                                 </li>
                                 <li>
-                                    <a href="tables.html">두가지 재료추가</a>
+                                    <a href="#">두가지 재료추가</a>
                                 </li>
                                 <li>
-                                    <a href="tables.html">Mores</a>
+                                    <a href="#">Mores</a>
                                 </li>
                             </ul>
                         </li>
@@ -269,12 +269,12 @@
                                     <i class="fa fa-cutlery fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">268</div>
+                                    <!--<div class="huge">268</div>-->
                                     <div>자취왕 통합검색!</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="search-recipe.html">
                             <div class="panel-footer">
                                 <span class="pull-left">자세히 보기</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -291,12 +291,12 @@
                                     <i class="fa fa-heart-o fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
+                                    <!--<div class="huge">2</div>-->
                                     <div>지금도 맛있는 레시피!</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="search-from.html">
                             <div class="panel-footer">
                                 <span class="pull-left">자세히 보기</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -313,12 +313,12 @@
                                     <i class="fa fa-won fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">124</div>
+                                    <!--<div class="huge">120</div>-->
                                     <div>더 맛있는 음식을 위한 지출!</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="search-from1.html">
                             <div class="panel-footer">
                                 <span class="pull-left">자세히 보기</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -399,20 +399,7 @@
                                         </thead>
                                         <!--예시-->
                                         <tbody>
-                                            <tr>
-                                                <td>스윙스 돈까스</td>
-                                                <td>1</td>
-                                                <td type="button" class="btn-outline btn-danger" onclick=consumeitem(this)>소모</td>
-                                            </tr>
-                                            <tr>
-                                                <td>고추장</td>
-                                                <td>1</td>
-                                                <td type="button" class="btn-outline btn-danger" onclick=consumeitem(this)>소모</td>
-                                            </tr>
-                                            <tr>
-                                                <td>고추장</td>
-                                                <td>1</td>
-                                                <td type="button" class="btn-outline btn-danger" onclick=consumeitem(this)>소모</td>
+                                            
                                         </tbody>
                                     </table>
                                     <!-- /.table-responsive -->
@@ -453,20 +440,7 @@
                                 </thead>
                                 <!--예시-->
                                 <tbody>
-                                    <tr>
-                                        <td>스윙스 돈까스</td>
-                                        <td>1</td>
-                                        <td type="button" class="btn-outline btn-success">추가</td>
-                                    </tr>
-                                    <tr>
-                                        <td>고추장</td>
-                                        <td>1</td>
-                                        <td type="button" class="btn-outline btn-success">추가</td>
-                                    </tr>
-                                    <tr>
-                                        <td>고추장</td>
-                                        <td>1</td>
-                                        <td type="button" class="btn-outline btn-success">추가</td>
+                                    
                                 </tbody>
                             </table>
                         </div>
@@ -500,6 +474,8 @@
 
     <script src="../dist/js/main.js"></script>
 
+    <script src="jquery.cookie.js"></script>  
+    
 </body>
 
 </html>
